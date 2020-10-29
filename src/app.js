@@ -30,20 +30,15 @@ function searchLocation(position) {
   axios.get(apiUrl).then(showForecast);
 }
 
-function getCurrentLocation(event) {
-  navigator.geolocation.getCurrentPosition(searchLocation);
-}
-
-let button = document.querySelector("#currentLocation");
-button.addEventListener("click", getCurrentLocation);
-
 function showForecast(response) {
-  document.querySelector("h3").innerHTML = response.data.name;
-  document.querySelector("#currentTemp").innerHTML = Math.round(response.data.main.temp);
+    celTemp = response.data.main.temp;
 
-   celTemp = response.data.main.temp;
-
-    temperatureElement.innerHTML = Math.round(celTemp);
+    document.querySelector("h3").innerHTML = response.data.name;
+    document.querySelector("#description").innerHTML = response.data.weather[0].description;
+    document.querySelector("#currentTemp").innerHTML = Math.round(celTemp);
+    document.querySelector("#humidity").innerHTML = response.data.main.humidity;
+    document.querySelector("#wind").innerHTML = Math.round(response.data.wind.speed);
+    document.querySelector("#icon").setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);;
 }
 
 function search(city) {
@@ -80,7 +75,7 @@ function tempCel(event){
     temperatureElement.innerHTML = Math.round(celTemp);
 }
 
-search("London");
+search("Londonderry");
 
 let celTemp = null;
 

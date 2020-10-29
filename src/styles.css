@@ -1,42 +1,37 @@
-h3,
-h4,
-p {
-  text-align: center;
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-hr {
-  border: solid 0.5px grey;
-  width: 850px;
+h3 {
+  padding-top: 10px;
 }
 
-#currentLocation {
-  display: block;
-  margin: 0 auto;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  color: #fff;
-  background-color: #82bae5;
+li {
+  list-style: none;
+}
+
+.weather-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+#description {
+  text-transform: capitalize;
+}
+
+.weather {
+  padding: 20px;
+  border: 1px solid #dadde1;
   border-radius: 5px;
-  border: #82bae5;
+}
+
+#search-input {
   text-align: center;
 }
 
-#search-input,
-.fa-search {
-  display: inline;
-  font-size: 20px;
-}
-
-.card {
-  display: block;
-  margin: 0 auto;
-}
-
-.cards,
 .current-weather-temperature {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .current-weather-temperature .active {
@@ -46,21 +41,6 @@ hr {
 
 .current-weather-temperature .active:hover {
   text-decoration: none;
-}
-
-#search-input {
-  width: 300px;
-  margin-top: 50px;
-  margin-left: 400px;
-  text-align: center;
-}
-
-#currentlocation-button {
-  display: block;
-  margin: 0 auto;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding: 5px;
 }
 
 #currentTemp {

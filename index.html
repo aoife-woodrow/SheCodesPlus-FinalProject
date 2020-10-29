@@ -10,62 +10,44 @@
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
   <link rel="stylesheet" href="src/styles.css" />
 </head>
-
 <body>
   <div class="container">
-      <form id="weather-form">
-        <input type="search" id="search-input" placeholder="Search by City name"
-          class="border border-secondary rounded" />
-        <input type="submit" value="Search" />
-        <!-- <a href="#"><i type="submit" class="fas fa-search"></i></a> -->
-        <input type="click" value="Current Location" id="currentLocation" />
-        <h3></h3>
-        <h4></h4>
-        <div class="current-weather-temperature">
-          <input type="image" <img src="images/sunwithclouds.png" alt="Weather icon" class="firstImage" />
-
-          <p id="currentTemp"></p>
-          <span class="units">
-            <a href="#" id="cel-link" class="active">°C</a> |
-            <a href="#" id="fah-link">°F</a>
-          </span>
-        </div>
-
-        <hr />
-        <div class="cards">
-          <div class="row p-2">
-            <div class="card border border-dark p-2 m-2">
-              <h4>Monday</h4>
-              <img src="images/sunwithclouds.png" alt="Weather icon" />
-              <p>20°C</p>
+      <div class="weather-wrapper">
+        <div class="weather">
+        <form id="weather-form">
+          <div class="row">
+            <div class="col-8">
+              <input type="search" id="search-input" placeholder="Search by City name" class="col align-self-center border border-secondary rounded" />
             </div>
-            <div class="card border border-dark p-2 m-2">
-              <h4>Tuesday</h4>
-              <img src="images/clouds.png" alt="Weather icon" />
-              <p>19°C</p>
-            </div>
-            <div class="card border border-dark p-2 m-2">
-              <h4>Wednesday</h4>
-              <img src="images/sunwithclouds.png" alt="Weather icon" />
-              <p>22°C</p>
-            </div>
-            <div class="card border border-dark p-2 m-2">
-              <h4>Thursday</h4>
-              <img src="images/sunwithclouds.png" alt="Weather icon" />
-              <p>18°C</p>
-            </div>
-            <div class="card border border-dark p-2 m-2">
-              <h4>Friday</h4>
-              <img src="images/sunwithclouds.png" alt="Weather icon" />
-              <p>18°C</p>
+            <div class="col-4">
+              <input type="submit" value="Search" class="" />
             </div>
           </div>
-      </div>
-    </form>
-    <p><a href="https://github.com/aoife-woodrow/SheCodesPlus-Week3Challenge-AW">Open-source code</a> by Aoife Woodrow</p> 
-</div>
-  <script src="src/app.js"></script>
-  <script src="https://kit.fontawesome.com/089106fcfc.js" crossorigin="anonymous"></script>
-</body>
 
+          <h3></h3>
+          <h4></h4>
+          <p id="description"></p>
+          <div class="current-weather-temperature">
+            <img src="" alt="Weather icon" id="icon" class="weather-icon" />
+          
+            <p id="currentTemp"></p>
+            <span class="units">
+              <a href="#" id="cel-link" class="active">°C</a> |
+              <a href="#" id="fah-link">°F</a>
+            </span>
+            <ul>
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span> mph</li>
+            </ul>
+          </div>
+        </form>
+        </div>
+        <small><a href="https://github.com/aoife-woodrow/SheCodesPlus-Week3Challenge-AW">Open-source code</a> by Aoife Woodrow</small>
+      </div>
+  </div>
+
+      
+<script src="src/app.js"></script>
+<script src="https://kit.fontawesome.com/089106fcfc.js" crossorigin="anonymous"></script>
+</body>
 </html>
