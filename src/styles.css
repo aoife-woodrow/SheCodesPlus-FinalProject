@@ -39,6 +39,15 @@ hr {
   justify-content: center;
 }
 
+.current-weather-temperature .active {
+  color: black;
+  cursor: default;
+}
+
+.current-weather-temperature .active:hover {
+  text-decoration: none;
+}
+
 #search-input {
   width: 300px;
   margin-top: 50px;
