@@ -1,0 +1,60 @@
+h3,
+h4,
+p {
+  text-align: center;
+}
+
+hr {
+  border: solid 0.5px grey;
+  width: 850px;
+}
+
+#currentLocation {
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: #fff;
+  background-color: #82bae5;
+  border-radius: 5px;
+  border: #82bae5;
+  text-align: center;
+}
+
+#search-input,
+.fa-search {
+  display: inline;
+  font-size: 20px;
+}
+
+.card {
+  display: block;
+  margin: 0 auto;
+}
+
+.cards,
+.current-weather-temperature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#search-input {
+  width: 300px;
+  margin-top: 50px;
+  margin-left: 400px;
+  text-align: center;
+}
+
+#currentlocation-button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 5px;
+}
+
+#currentTemp {
+  font-size: 40px;
+  padding-right: 10px;
+}
